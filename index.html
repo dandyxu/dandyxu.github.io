@@ -14,6 +14,9 @@
 
 
 
+
+
+
   
   
     
@@ -53,46 +56,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
 
 
 
 
 
 
-
-
-
-
-<meta name="description" content="Coding, Travelling, Reading and Enjoying">
-<meta property="og:type" content="website">
-<meta property="og:title" content="My Resume">
-<meta property="og:url" content="http://dandyxu.me/resume/index.html">
-<meta property="og:site_name" content="Dandy Xu&#39;s Blog">
-<meta property="og:description" content="Coding, Travelling, Reading and Enjoying">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-14T23:35:32.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My Resume">
-<meta name="twitter:description" content="Coding, Travelling, Reading and Enjoying">
 
 
 
@@ -101,17 +83,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Gemini',
-    version: '6.0.0',
+    version: '6.0.2',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -123,11 +101,32 @@
 </script>
 
 
-
-  <link rel="canonical" href="http://dandyxu.me/resume/"/>
-
+  
 
 
+
+
+  
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+<meta name="description" content="Coding, Travelling, Reading and Enjoying">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dandy Xu&#39;s Blog">
+<meta property="og:url" content="http://dandyxu.me/index.html">
+<meta property="og:site_name" content="Dandy Xu&#39;s Blog">
+<meta property="og:description" content="Coding, Travelling, Reading and Enjoying">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dandy Xu&#39;s Blog">
+<meta name="twitter:description" content="Coding, Travelling, Reading and Enjoying">
+
+
+
+
+
+
+  <link rel="canonical" href="http://dandyxu.me/"/>
 
 
   <title>Dandy Xu's Blog</title>
@@ -136,18 +135,46 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100475240-1"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-100475240-1', 'auto');
-  ga('send', 'pageview');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-100475240-1');
 </script>
 
 
 
 
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
 </head>
 
@@ -199,67 +226,27 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-
-            
-              
-                Home
-              
-            
-
-          </a>
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
         </li>
       
         
         <li class="menu-item menu-item-resume">
           <a href="/resume/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-
-            
-              
-                Resume
-              
-            
-
-          </a>
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />Resume</a>
         </li>
       
         
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-
-            
-              
-                Tags
-                <span class="badge">2</span>
-              
-            
-
-          </a>
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">2</span>
+              </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-
-            
-              
-                Archives
-                <span class="badge">4</span>
-              
-            
-
-          </a>
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives<span class="badge">4</span>
+              </a>
         </li>
       
 
@@ -271,9 +258,15 @@
 </nav>
 
 
+  
+
+
 
  </div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
@@ -290,8 +283,6 @@
   
   
 
-  
-    <div class="reading-progress-bar"></div>
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -333,6 +324,7 @@
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-23T00:31:22Z">2018-01-23</time>
             
 
+            
             
 
             
@@ -445,8 +437,6 @@
   
 
   
-    <div class="reading-progress-bar"></div>
-  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
@@ -487,6 +477,7 @@
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-08T22:27:10Z">2018-01-08</time>
             
 
+            
             
 
             
@@ -592,8 +583,6 @@
   
 
   
-    <div class="reading-progress-bar"></div>
-  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
@@ -634,6 +623,7 @@
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-02T16:21:18+01:00">2017-06-02</time>
             
 
+            
             
 
             
@@ -747,8 +737,6 @@
   
 
   
-    <div class="reading-progress-bar"></div>
-  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
@@ -789,6 +777,7 @@
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-10T10:45:12Z">2016-11-10</time>
             
 
+            
             
 
             
@@ -893,9 +882,6 @@
           </div>
           
 
-
-          
-
         </div>
         
           
@@ -991,6 +977,9 @@
           
 
           
+            
+          
+          
 
         </div>
       </section>
@@ -1050,7 +1039,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.0.0</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.0.2</div>
 
 
 
@@ -1139,36 +1128,32 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=6.0.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
 
 
 
   
-
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.2"></script>
 
 
 
   
 
-
   
 
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
 
 
 
@@ -1195,8 +1180,6 @@
 
 
 
-
-
   
 
 
@@ -1210,6 +1193,11 @@
   
 
   
+
+
+  
+  
+
   
 
   
