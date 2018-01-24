@@ -110,27 +110,27 @@
   <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta name="description" content="Coding, Travelling, Reading and Enjoying">
+<meta name="description" content="In the previous blog, I introduced how to update Hexo and Hexo theme - Next. However, since Hexo 3.0, it’s recommended to install hexo-cli, which is command line interface for hexo.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="I&#39;m back! New dandyxu.me will go live soon">
-<meta property="og:url" content="http://dandyxu.me/2018/01/08/I-m-back-New-dandyxu-me-will-go-live-soon/index.html">
+<meta property="og:title" content="How to update Hexo and Hexo theme properly">
+<meta property="og:url" content="http://dandyxu.me/2018/01/23/How-to-update-Hexo-and-Hexo-theme-properly/index.html">
 <meta property="og:site_name" content="Dandy Xu&#39;s Blog">
-<meta property="og:description" content="Coding, Travelling, Reading and Enjoying">
+<meta property="og:description" content="In the previous blog, I introduced how to update Hexo and Hexo theme - Next. However, since Hexo 3.0, it’s recommended to install hexo-cli, which is command line interface for hexo.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-08T22:27:16.000Z">
+<meta property="og:updated_time" content="2018-01-24T00:49:11.994Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="I&#39;m back! New dandyxu.me will go live soon">
-<meta name="twitter:description" content="Coding, Travelling, Reading and Enjoying">
+<meta name="twitter:title" content="How to update Hexo and Hexo theme properly">
+<meta name="twitter:description" content="In the previous blog, I introduced how to update Hexo and Hexo theme - Next. However, since Hexo 3.0, it’s recommended to install hexo-cli, which is command line interface for hexo.">
 
 
 
 
 
 
-  <link rel="canonical" href="http://dandyxu.me/2018/01/08/I-m-back-New-dandyxu-me-will-go-live-soon/"/>
+  <link rel="canonical" href="http://dandyxu.me/2018/01/23/How-to-update-Hexo-and-Hexo-theme-properly/"/>
 
 
-  <title>I'm back! New dandyxu.me will go live soon | Dandy Xu's Blog</title>
+  <title>How to update Hexo and Hexo theme properly | Dandy Xu's Blog</title>
   
 
 
@@ -292,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dandyxu.me/2018/01/08/I-m-back-New-dandyxu-me-will-go-live-soon/">
+    <link itemprop="mainEntityOfPage" href="http://dandyxu.me/2018/01/23/How-to-update-Hexo-and-Hexo-theme-properly/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dandy Xu">
@@ -309,7 +309,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">I'm back! New dandyxu.me will go live soon</h2>
+          <h2 class="post-title" itemprop="name headline">How to update Hexo and Hexo theme properly</h2>
         
 
         <div class="post-meta">
@@ -321,7 +321,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-08T22:27:10+00:00">2018-01-08</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-23T21:20:53+00:00">2018-01-23</time>
             
 
             
@@ -352,7 +352,7 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                <span title="Words count in article">0</span>
+                <span title="Words count in article">2k</span>
               
 
               
@@ -364,7 +364,7 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                <span title="Reading time">0:01</span>
+                <span title="Reading time">0:02</span>
               
             </div>
           
@@ -384,7 +384,39 @@
       
 
       
-        
+        <p>In the previous blog, I introduced how to update Hexo and Hexo theme - Next. However, since Hexo 3.0, it’s recommended to install <code>hexo-cli</code>, which is command line interface for hexo.</p>
+<a id="more"></a>
+<h3 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h3><p><code>$ npm install hexo-cli -g</code></p>
+<p>which install <code>hexo-cli</code> globally</p>
+<h3 id="Update-Hexo"><a href="#Update-Hexo" class="headerlink" title="Update Hexo"></a>Update Hexo</h3><p>Because Hexo is managed by npm, so the update command should be:</p>
+<ol>
+<li>Change into blog directory with <code>package.json</code> file</li>
+<li>Run <code>npm update</code></li>
+</ol>
+<h3 id="Update-Hexo-theme-NexT"><a href="#Update-Hexo-theme-NexT" class="headerlink" title="Update Hexo theme - NexT"></a>Update Hexo theme - NexT</h3><p>The current theme I’m using for this blog is <code>NexT</code>. It’s originally developed by a Chinese developer - <code>Vi</code>. However, in Dec.2017, for some reasons, it switched to a Russian developer to manage and maintain. The theme is rebased to Version 6.0.0 and moved to an entire new Git repo.</p>
+<p>Original Repo:<br><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a></p>
+<p>New Repo:<br><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a></p>
+<p>From what I can see, it seems this Russian developer is very keen on the NexT, which is really great. He’s working with other Chinese developers, building the new official website for NexT theme and keep fixing bugs, adding features etc.</p>
+<p>New Link: <a href="https://theme-next.org/" target="_blank" rel="noopener">https://theme-next.org/</a></p>
+<p>There are 3 days left to be launched. Personally I’m really looking forward to the new website and hope in some stage, I can get involved in this great project.</p>
+<p>Back to the topic, because installing the Hexo theme is actually clone the theme repo and enable it in the Hexo root _config.yml file. So, to update the theme, it’s just <code>git pull</code> from original theme repo and it will fetch and merge automatically (if no conflicts happened, finger crossed!). </p>
+<p>The command will be:</p>
+<p><code>$ git pull</code></p>
+<p>There are two situations I would like to emphasize:</p>
+<ol>
+<li><p>If you forked the theme to your own Repo, you need to add original Repo as upstream remote Repo.</p>
+<p> Step 1: <code>$ git remote add upstream {remote Repo link}</code></p>
+<p> Step 2: <code>$ git remote -v</code> to check whether added</p>
+<p> Step 3: <code>$ git fetch upstream</code></p>
+<p> Step 4: <code>$ git checkout master</code></p>
+<p> Step 4: <code>$ git merge upstream/master</code></p>
+</li>
+<li><p>Git Submodule topic (I will talk about it tomorrow)</p>
+</li>
+</ol>
+<p>That’s all today. I will talk about <code>git submodule</code> this concept and how I use Git Submodule feature in the workflow of building and maintaining this blog.</p>
+<p>See you tomorrow.</p>
+
       
     </div>
     
@@ -404,7 +436,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://dandyxu.me/2018/01/08/I-m-back-New-dandyxu-me-will-go-live-soon/" title="I'm back! New dandyxu.me will go live soon">http://dandyxu.me/2018/01/08/I-m-back-New-dandyxu-me-will-go-live-soon/</a>
+    <a href="http://dandyxu.me/2018/01/23/How-to-update-Hexo-and-Hexo-theme-properly/" title="How to update Hexo and Hexo theme properly">http://dandyxu.me/2018/01/23/How-to-update-Hexo-and-Hexo-theme-properly/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -426,8 +458,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/02/New-Journey-Step-1-Update-Hexo-and-Hexo-Theme/" rel="next" title="New Journey Step 1: Update Hexo and Hexo Theme">
-                <i class="fa fa-chevron-left"></i> New Journey Step 1: Update Hexo and Hexo Theme
+              <a href="/2018/01/23/Switch-from-dandyxu-com-to-dandyxu-me/" rel="next" title="Switch from dandyxu.com to dandyxu.me">
+                <i class="fa fa-chevron-left"></i> Switch from dandyxu.com to dandyxu.me
               </a>
             
           </div>
@@ -435,10 +467,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/23/Switch-from-dandyxu-com-to-dandyxu-me/" rel="prev" title="Switch from dandyxu.com to dandyxu.me">
-                Switch from dandyxu.com to dandyxu.me <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -487,8 +515,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -570,6 +607,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Hexo"><span class="nav-number">1.</span> <span class="nav-text">Install Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Update-Hexo"><span class="nav-number">2.</span> <span class="nav-text">Update Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Update-Hexo-theme-NexT"><span class="nav-number">3.</span> <span class="nav-text">Update Hexo theme - NexT</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
