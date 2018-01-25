@@ -107,29 +107,33 @@
 
 
   
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="hexo,Git,Git Submodule," />
 
 
-<meta name="description" content="Coding, Travelling, Reading and Enjoying">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Dandy Xu&#39;s Blog">
-<meta property="og:url" content="http://dandyxu.me/tags/hexo-hexo-theme/index.html">
+<meta name="description" content="In the last blog How to update Hexo and Hexo theme properly, I manage both Hexo blog and Hexo themes as Git Repositories. However, I met a problem when I push everything to remote repo and tried to pu">
+<meta name="keywords" content="hexo,Git,Git Submodule">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to use Git Submodule to manage Hexo themes">
+<meta property="og:url" content="http://dandyxu.me/2018/01/24/How-to-use-Git-Submodule-to-manage-Hexo-themes/index.html">
 <meta property="og:site_name" content="Dandy Xu&#39;s Blog">
-<meta property="og:description" content="Coding, Travelling, Reading and Enjoying">
+<meta property="og:description" content="In the last blog How to update Hexo and Hexo theme properly, I manage both Hexo blog and Hexo themes as Git Repositories. However, I met a problem when I push everything to remote repo and tried to pu">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://dandyxu.me/2018/01/24/images/Git_Submodules.png">
+<meta property="og:updated_time" content="2018-01-25T00:22:38.922Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dandy Xu&#39;s Blog">
-<meta name="twitter:description" content="Coding, Travelling, Reading and Enjoying">
+<meta name="twitter:title" content="How to use Git Submodule to manage Hexo themes">
+<meta name="twitter:description" content="In the last blog How to update Hexo and Hexo theme properly, I manage both Hexo blog and Hexo themes as Git Repositories. However, I met a problem when I push everything to remote repo and tried to pu">
+<meta name="twitter:image" content="http://dandyxu.me/2018/01/24/images/Git_Submodules.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://dandyxu.me/tags/hexo-hexo-theme/"/>
+  <link rel="canonical" href="http://dandyxu.me/2018/01/24/How-to-use-Git-Submodule-to-manage-Hexo-themes/"/>
 
 
-  <title>Tag: hexo, hexo theme | Dandy Xu's Blog</title>
+  <title>How to use Git Submodule to manage Hexo themes | Dandy Xu's Blog</title>
   
 
 
@@ -185,7 +189,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <a href="https://github.com/dandyxu" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -237,14 +241,14 @@
         
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">2</span>
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">5</span>
               </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives<span class="badge">5</span>
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives<span class="badge">6</span>
               </a>
         </li>
       
@@ -273,58 +277,236 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>hexo, hexo theme<small>Tag</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dandyxu.me/2018/01/24/How-to-use-Git-Submodule-to-manage-Hexo-themes/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dandy Xu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dandy Xu's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/06/02/New-Journey-Step-1-Update-Hexo-and-Hexo-Theme/" itemprop="url">
-              
-                <span itemprop="name">New Journey Step 1: Update Hexo and Hexo Theme</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">How to use Git Submodule to manage Hexo themes</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-06-02T16:21:18+01:00"
-              content="2017-06-02" >
-          06-02
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-24T23:37:03+00:00">2018-01-24</time>
+            
 
-    </header>
-  </article>
+            
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="Words count in article">2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                <span title="Reading time">0:02</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>In the last blog <a href="https://dandyxu.me/2018/01/23/How-to-update-Hexo-and-Hexo-theme-properly/" title="How to update Hexo and Hexo theme properly">How to update Hexo and Hexo theme properly</a>, I manage both Hexo blog and Hexo themes as Git Repositories. However, I met a problem when I push everything to remote repo and tried to pull to another PC/Mac.</p>
+<h3 id="Where-is-my-theme"><a href="#Where-is-my-theme" class="headerlink" title="Where is my theme?"></a>Where is my theme?</h3><a id="more"></a>
+<p>The image below you will probably see:</p>
+<p><img src="../images/Git_Submodules.png" alt="Git Submodules"></p>
+<p>As you can see in the screenshot, both <code>edinburgh</code> and <code>next</code> are shown differently with <code>landscape</code>. If in this case, you pull the whole repo to another laptop, you will surprisely find these two themes are autually empty!</p>
+<h3 id="What’s-going-on"><a href="#What’s-going-on" class="headerlink" title="What’s going on?"></a>What’s going on?</h3><p>I don’t want to talk from the beginning about the concept of <code>Git Submodule</code>. Here is an article explained extremely great.</p>
+<p><a href="https://chrisjean.com/git-submodules-adding-using-removing-and-updating/" target="_blank" rel="noopener">https://chrisjean.com/git-submodules-adding-using-removing-and-updating/</a></p>
+<p>In this blog, I just want to show you how I use git submodules to update, manage Hexo themes.</p>
+<h3 id="My-personal-workflow-to-manage-Hexo-themes"><a href="#My-personal-workflow-to-manage-Hexo-themes" class="headerlink" title="My personal workflow to manage Hexo themes"></a>My personal workflow to manage Hexo themes</h3><p>Because we still need to update themes by merging upstream from original theme repo, so it’s better to keep themes folder as git repo.</p>
+<p>If you go through the article I shared above, you will basically know <code>Git Submodule</code> is just kind of reference or path if there is git repo totally under another git repo. After adding git submodules, you will have a new file called - <code>.gitmodules</code>, which pointing out the path to the submodules.</p>
+<p>So, if I do some changes in the theme file, for example, I update the theme or change some settings in the theme _config.yml file.</p>
+<ol>
+<li><p>Navigate to theme folder, commit and push all changes. This step is just committed to theme repo;</p>
+</li>
+<li><p>Navigate back to the Hexo root folder, you will see changes for the theme folder, for example, <code>/themes/next</code>. In this case, you need to commit the theme folder, then push.</p>
+</li>
+</ol>
+<h3 id="Migrate-to-another-environment"><a href="#Migrate-to-another-environment" class="headerlink" title="Migrate to another environment"></a>Migrate to another environment</h3><ol>
+<li><p>Clone Hexo git repo. But in this stage, you only find empty theme folders;</p>
+</li>
+<li><p>Navigate to theme folder, Initialize the submodule(s)</p>
+</li>
+</ol>
+<p><code>$ git submodule init</code></p>
+<ol>
+<li>We need to run the update in order to pull down theme files and populate submodules</li>
+</ol>
+<p><code>$ git submodule update</code></p>
+<p>That’s it. With all actions above, you’re able to manage Hexo themes via submodules easier and smoother. Well, it took me a while to figure it out, I still remember that I spent nearly 3 days working on this issue (I thought it’s something wrong with Git!).</p>
+<p>Hope it will help you if you meet the same problem like me.</p>
+<p>Have a good night!</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Dandy Xu
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://dandyxu.me/2018/01/24/How-to-use-Git-Submodule-to-manage-Hexo-themes/" title="How to use Git Submodule to manage Hexo themes">http://dandyxu.me/2018/01/24/How-to-use-Git-Submodule-to-manage-Hexo-themes/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
+          
+            <a href="/tags/Git-Submodule/" rel="tag"># Git Submodule</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/23/How-to-update-Hexo-and-Hexo-theme-properly/" rel="next" title="How to update Hexo and Hexo theme properly">
+                <i class="fa fa-chevron-left"></i> How to update Hexo and Hexo theme properly
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -345,8 +527,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -361,7 +552,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -374,7 +565,7 @@
                 
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -429,6 +620,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Where-is-my-theme"><span class="nav-number">1.</span> <span class="nav-text">Where is my theme?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What’s-going-on"><span class="nav-number">2.</span> <span class="nav-text">What’s going on?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#My-personal-workflow-to-manage-Hexo-themes"><span class="nav-number">3.</span> <span class="nav-text">My personal workflow to manage Hexo themes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Migrate-to-another-environment"><span class="nav-number">4.</span> <span class="nav-text">Migrate to another environment</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -461,7 +668,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Site words total count">5k</span>
+    <span title="Site words total count">7k</span>
   
 
   
@@ -470,7 +677,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Site reading time">0:05</span>
+    <span title="Site reading time">0:07</span>
   
 </div>
 
@@ -589,6 +796,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
 
   
 
