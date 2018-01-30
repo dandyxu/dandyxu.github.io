@@ -107,33 +107,31 @@
 
 
   
-  <meta name="keywords" content="hexo,Git,Git Submodule," />
+  <meta name="keywords" content="hexo,hexo theme," />
 
 
-<meta name="description" content="In the last blog How to update Hexo and Hexo theme properly, I manage both Hexo blog and Hexo themes as Git Repositories. However, I met a problem when I push everything to remote repo and tried to pu">
-<meta name="keywords" content="hexo,Git,Git Submodule">
+<meta name="description" content="In the previous blog, I introduced how to update Hexo and Hexo theme - NexT. However, since Hexo 3.0, it’s recommended to install hexo-cli, which is command line interface for hexo.">
+<meta name="keywords" content="hexo,hexo theme">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to use Git Submodule to manage Hexo themes">
-<meta property="og:url" content="http://dandyxu.me/2018/01/24/How-to-use-Git-Submodule-to-manage-Hexo-themes/index.html">
+<meta property="og:title" content="How to update Hexo and Hexo theme properly">
+<meta property="og:url" content="http://dandyxu.me/Hexo/How-to-update-Hexo-and-Hexo-theme-properly/index.html">
 <meta property="og:site_name" content="Dandy Xu&#39;s Blog">
-<meta property="og:description" content="In the last blog How to update Hexo and Hexo theme properly, I manage both Hexo blog and Hexo themes as Git Repositories. However, I met a problem when I push everything to remote repo and tried to pu">
+<meta property="og:description" content="In the previous blog, I introduced how to update Hexo and Hexo theme - NexT. However, since Hexo 3.0, it’s recommended to install hexo-cli, which is command line interface for hexo.">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/dandyxu.me.assets/images/Git_Submodules.png">
-<meta property="og:updated_time" content="2018-01-25T00:35:39.000Z">
+<meta property="og:updated_time" content="2018-01-30T16:21:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to use Git Submodule to manage Hexo themes">
-<meta name="twitter:description" content="In the last blog How to update Hexo and Hexo theme properly, I manage both Hexo blog and Hexo themes as Git Repositories. However, I met a problem when I push everything to remote repo and tried to pu">
-<meta name="twitter:image" content="https://s3-eu-west-1.amazonaws.com/dandyxu.me.assets/images/Git_Submodules.png">
+<meta name="twitter:title" content="How to update Hexo and Hexo theme properly">
+<meta name="twitter:description" content="In the previous blog, I introduced how to update Hexo and Hexo theme - NexT. However, since Hexo 3.0, it’s recommended to install hexo-cli, which is command line interface for hexo.">
 
 
 
 
 
 
-  <link rel="canonical" href="http://dandyxu.me/2018/01/24/How-to-use-Git-Submodule-to-manage-Hexo-themes/"/>
+  <link rel="canonical" href="http://dandyxu.me/Hexo/How-to-update-Hexo-and-Hexo-theme-properly/"/>
 
 
-  <title>How to use Git Submodule to manage Hexo themes | Dandy Xu's Blog</title>
+  <title>How to update Hexo and Hexo theme properly | Dandy Xu's Blog</title>
   
 
 
@@ -241,7 +239,7 @@
         
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories<span class="badge">0</span>
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories<span class="badge">2</span>
               </a>
         </li>
       
@@ -301,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dandyxu.me/2018/01/24/How-to-use-Git-Submodule-to-manage-Hexo-themes/">
+    <link itemprop="mainEntityOfPage" href="http://dandyxu.me/Hexo/How-to-update-Hexo-and-Hexo-theme-properly/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dandy Xu">
@@ -318,7 +316,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">How to use Git Submodule to manage Hexo themes</h2>
+          <h2 class="post-title" itemprop="name headline">How to update Hexo and Hexo theme properly</h2>
         
 
         <div class="post-meta">
@@ -330,7 +328,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-24T23:37:03+00:00">2018-01-24</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-23T21:20:53+00:00">2018-01-23</time>
             
 
             
@@ -339,6 +337,24 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -393,37 +409,38 @@
       
 
       
-        <p>In the last blog <a href="https://dandyxu.me/2018/01/23/How-to-update-Hexo-and-Hexo-theme-properly/" title="How to update Hexo and Hexo theme properly">How to update Hexo and Hexo theme properly</a>, I manage both Hexo blog and Hexo themes as Git Repositories. However, I met a problem when I push everything to remote repo and tried to pull to another PC/Mac.</p>
-<h3 id="Where-is-my-theme"><a href="#Where-is-my-theme" class="headerlink" title="Where is my theme?"></a>Where is my theme?</h3><a id="more"></a>
-<p>The image below you will probably see:</p>
-<p><img src="https://s3-eu-west-1.amazonaws.com/dandyxu.me.assets/images/Git_Submodules.png" alt="Git Submodules"></p>
-<p>As you can see in the screenshot, both <code>edinburgh</code> and <code>next</code> are shown differently with <code>landscape</code>. If in this case, you pull the whole repo to another laptop, you will surprisely find these two themes are autually empty!</p>
-<h3 id="What’s-going-on"><a href="#What’s-going-on" class="headerlink" title="What’s going on?"></a>What’s going on?</h3><p>I don’t want to talk from the beginning about the concept of <code>Git Submodule</code>. Here is an article explained extremely great.</p>
-<p><a href="https://chrisjean.com/git-submodules-adding-using-removing-and-updating/" target="_blank" rel="noopener">https://chrisjean.com/git-submodules-adding-using-removing-and-updating/</a></p>
-<p>In this blog, I just want to show you how I use git submodules to update, manage Hexo themes.</p>
-<h3 id="My-personal-workflow-to-manage-Hexo-themes"><a href="#My-personal-workflow-to-manage-Hexo-themes" class="headerlink" title="My personal workflow to manage Hexo themes"></a>My personal workflow to manage Hexo themes</h3><p>Because we still need to update themes by merging upstream from original theme repo, so it’s better to keep themes folder as git repo.</p>
-<p>If you go through the article I shared above, you will basically know <code>Git Submodule</code> is just kind of reference or path if there is git repo totally under another git repo. After adding git submodules, you will have a new file called - <code>.gitmodules</code>, which pointing out the path to the submodules.</p>
-<p>So, if I do some changes in the theme file, for example, I update the theme or change some settings in the theme _config.yml file.</p>
+        <p>In the previous blog, I introduced how to update Hexo and Hexo theme - <code>NexT</code>. However, since Hexo 3.0, it’s recommended to install <code>hexo-cli</code>, which is command line interface for hexo.</p>
+<a id="more"></a>
+<h3 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h3><p><code>$ npm install hexo-cli -g</code></p>
+<p>which install <code>hexo-cli</code> globally</p>
+<h3 id="Update-Hexo"><a href="#Update-Hexo" class="headerlink" title="Update Hexo"></a>Update Hexo</h3><p>Because Hexo is managed by npm, so the update command should be:</p>
 <ol>
-<li><p>Navigate to theme folder, commit and push all changes. This step is just committed to theme repo;</p>
-</li>
-<li><p>Navigate back to the Hexo root folder, you will see changes for the theme folder, for example, <code>/themes/next</code>. In this case, you need to commit the theme folder, then push.</p>
-</li>
+<li>Change into blog directory with <code>package.json</code> file</li>
+<li>Run <code>npm update</code></li>
 </ol>
-<h3 id="Migrate-to-another-environment"><a href="#Migrate-to-another-environment" class="headerlink" title="Migrate to another environment"></a>Migrate to another environment</h3><ol>
-<li><p>Clone Hexo git repo. But in this stage, you only find empty theme folders;</p>
-</li>
-<li><p>Navigate to theme folder, Initialize the submodule(s)</p>
-</li>
-</ol>
-<p><code>$ git submodule init</code></p>
+<h3 id="Update-Hexo-theme-NexT"><a href="#Update-Hexo-theme-NexT" class="headerlink" title="Update Hexo theme - NexT"></a>Update Hexo theme - NexT</h3><p>The current theme I’m using for this blog is <code>NexT</code>. It’s originally developed by a Chinese developer - <code>Vi</code>. However, in Dec.2017, for some reasons, it switched to a Russian developer to manage and maintain. The theme is rebased to Version 6.0.0 and moved to an entire new Git repo.</p>
+<p>Original Repo:<br><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a></p>
+<p>New Repo:<br><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a></p>
+<p>From what I can see, it seems this Russian developer is very keen on the NexT, which is really great. He’s working with other Chinese developers, building the new official website for NexT theme and keep fixing bugs, adding features etc.</p>
+<p>New Link: <a href="https://theme-next.org/" target="_blank" rel="noopener">https://theme-next.org/</a></p>
+<p>There are 3 days left to be launched. Personally I’m really looking forward to the new website and hope in some stage, I can get involved in this great project.</p>
+<p>Back to the topic, because installing the Hexo theme is actually clone the theme repo and enable it in the Hexo root _config.yml file. So, to update the theme, it’s just <code>git pull</code> from original theme repo and it will fetch and merge automatically (if no conflicts happened, finger crossed!). </p>
+<p>The command will be:</p>
+<p><code>$ git pull</code></p>
+<p>There are two situations I would like to emphasize:</p>
 <ol>
-<li>We need to run the update in order to pull down theme files and populate submodules</li>
+<li><p>If you forked the theme to your own Repo, you need to add original Repo as upstream remote Repo.</p>
+<p> Step 1: <code>$ git remote add upstream {remote Repo link}</code></p>
+<p> Step 2: <code>$ git remote -v</code> to check whether added</p>
+<p> Step 3: <code>$ git fetch upstream</code></p>
+<p> Step 4: <code>$ git checkout master</code></p>
+<p> Step 5: <code>$ git merge upstream/master</code></p>
+</li>
+<li><p>Git Submodule topic (I will talk about it tomorrow)</p>
+</li>
 </ol>
-<p><code>$ git submodule update</code></p>
-<p>That’s it. With all actions above, you’re able to manage Hexo themes via submodules easier and smoother. Well, it took me a while to figure it out, I still remember that I spent nearly 3 days working on this issue (I thought it’s something wrong with Git!).</p>
-<p>Hope it will help you if you meet the same problem like me.</p>
-<p>Have a good night!</p>
+<p>That’s all today. I will talk about <code>git submodule</code> this concept and how I use Git Submodule feature in the workflow of building and maintaining this blog.</p>
+<p>See you tomorrow.</p>
 
       
     </div>
@@ -444,7 +461,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://dandyxu.me/2018/01/24/How-to-use-Git-Submodule-to-manage-Hexo-themes/" title="How to use Git Submodule to manage Hexo themes">http://dandyxu.me/2018/01/24/How-to-use-Git-Submodule-to-manage-Hexo-themes/</a>
+    <a href="http://dandyxu.me/Hexo/How-to-update-Hexo-and-Hexo-theme-properly/" title="How to update Hexo and Hexo theme properly">http://dandyxu.me/Hexo/How-to-update-Hexo-and-Hexo-theme-properly/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -461,9 +478,7 @@
           
             <a href="/tags/hexo/" rel="tag"># hexo</a>
           
-            <a href="/tags/Git/" rel="tag"># Git</a>
-          
-            <a href="/tags/Git-Submodule/" rel="tag"># Git Submodule</a>
+            <a href="/tags/hexo-theme/" rel="tag"># hexo theme</a>
           
         </div>
       
@@ -476,8 +491,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/23/How-to-update-Hexo-and-Hexo-theme-properly/" rel="next" title="How to update Hexo and Hexo theme properly">
-                <i class="fa fa-chevron-left"></i> How to update Hexo and Hexo theme properly
+              <a href="/Hexo/Switch-from-dandyxu-com-to-dandyxu-me/" rel="next" title="Switch from dandyxu.com to dandyxu.me">
+                <i class="fa fa-chevron-left"></i> Switch from dandyxu.com to dandyxu.me
               </a>
             
           </div>
@@ -485,6 +500,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Git/How-to-use-Git-Submodule-to-manage-Hexo-themes/" rel="prev" title="How to use Git Submodule to manage Hexo themes">
+                How to use Git Submodule to manage Hexo themes <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -565,6 +584,15 @@
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
 
               
                 
@@ -635,7 +663,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Where-is-my-theme"><span class="nav-number">1.</span> <span class="nav-text">Where is my theme?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What’s-going-on"><span class="nav-number">2.</span> <span class="nav-text">What’s going on?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#My-personal-workflow-to-manage-Hexo-themes"><span class="nav-number">3.</span> <span class="nav-text">My personal workflow to manage Hexo themes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Migrate-to-another-environment"><span class="nav-number">4.</span> <span class="nav-text">Migrate to another environment</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Hexo"><span class="nav-number">1.</span> <span class="nav-text">Install Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Update-Hexo"><span class="nav-number">2.</span> <span class="nav-text">Update Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Update-Hexo-theme-NexT"><span class="nav-number">3.</span> <span class="nav-text">Update Hexo theme - NexT</span></a></li></ol></div>
             
 
           </div>
