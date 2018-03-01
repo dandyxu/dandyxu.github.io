@@ -218,6 +218,7 @@ h6 {
   line-height: 1.5;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
+h1,
 h2,
 h3,
 h4,
@@ -550,7 +551,7 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 14px;
   color: #4d4d4c;
   background: #f7f7f7;
   line-height: 1.6;
@@ -565,7 +566,7 @@ code {
   color: #555;
   background: #eee;
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 14px;
 }
 pre {
   padding: 10px;
@@ -1567,7 +1568,7 @@ pre .javascript .function {
   font-size: 14px;
   margin-top: 2px;
 }
-.post-wordcount {
+.post-symbolscount {
   display: inline-block;
 }
 .post-meta-divider {
@@ -1743,11 +1744,13 @@ pre .javascript .function {
   background: #222;
   -webkit-transform: translateZ(0);
 }
-.sidebar a {
+.sidebar a,
+.sidebar .exturl {
   color: #999;
   border-bottom-color: #555;
 }
-.sidebar a:hover {
+.sidebar a:hover,
+.sidebar .exturl:hover {
   color: #eee;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1880,7 +1883,8 @@ pre .javascript .function {
 .links-of-author {
   margin-top: 20px;
 }
-.links-of-author a {
+.links-of-author a,
+.links-of-author .exturl {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
@@ -1888,7 +1892,8 @@ pre .javascript .function {
   border-bottom-color: #555;
   font-size: 13px;
 }
-.links-of-author a:before {
+.links-of-author a:before,
+.links-of-author .exturl:before {
   display: inline-block;
   vertical-align: middle;
   margin-right: 3px;
@@ -1896,7 +1901,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4ed9ff;
+  background: #ffff8f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1990,7 +1995,6 @@ pre .javascript .function {
 .post-toc .nav-item {
   overflow: hidden;
   text-overflow: ellipsis;
-  text-align: justify;
   line-height: 1.8;
 }
 .post-toc .nav .nav-child {
@@ -2193,13 +2197,6 @@ pre .javascript .function {
 .site-pv .busuanzi-value,
 .page-pv .busuanzi-value {
   margin: 0 5px;
-}
-.site-uv {
-  margin-right: 10px;
-}
-.site-uv::after {
-  content: "|";
-  padding-left: 10px;
 }
 .page-archive .archive-page-counter {
   position: relative;
@@ -2423,6 +2420,24 @@ pre .javascript .function {
 }
 .page-post-detail .comments {
   overflow: hidden;
+}
+ul.breadcrumb {
+  list-style: none;
+  margin: 1em 0;
+  padding: 0 2em;
+  text-align: center;
+  font-size: 12px;
+}
+ul.breadcrumb li {
+  display: inline;
+}
+ul.breadcrumb li+li:before {
+  padding: 0.5em;
+  font-weight: normal;
+  content: "/\00a0";
+}
+ul.breadcrumb li+li:last-child {
+  font-weight: bold;
 }
 .header {
   position: relative;
@@ -2713,19 +2728,23 @@ pre .javascript .function {
 .site-author:after {
   clear: both;
 }
-.sidebar a {
+.sidebar a,
+.sidebar .exturl {
   color: #555;
 }
-.sidebar a:hover {
+.sidebar a:hover,
+.sidebar .exturl:hover {
   color: #222;
 }
 .site-state-item {
   padding: 0 10px;
 }
-.links-of-author-item a:before {
+.links-of-author-item a:before,
+.links-of-author-item .exturl:before {
   display: none;
 }
-.links-of-author-item a {
+.links-of-author-item a,
+.links-of-author-item .exturl {
   border-bottom: none;
   text-decoration: underline;
 }
@@ -2751,11 +2770,15 @@ pre .javascript .function {
   flex-wrap: wrap;
   justify-content: center;
 }
+.links-of-author .exturl {
+  font-size: 13px;
+}
 .links-of-author-item {
   margin: 5px 0 0;
   width: 50%;
 }
-.links-of-author-item a {
+.links-of-author-item a,
+.links-of-author-item .exturl {
   max-width: 216px;
   box-sizing: border-box;
   display: inline-block;
@@ -2765,15 +2788,14 @@ pre .javascript .function {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
 }
-.links-of-author-item a {
+.links-of-author-item a,
+.links-of-author-item .exturl {
   display: block;
   text-decoration: none;
 }
-.links-of-author-item a:hover {
+.links-of-author-item a:hover,
+.links-of-author-item .exturl:hover {
   border-radius: 4px;
   background: #eee;
 }
@@ -2810,7 +2832,8 @@ pre .javascript .function {
   display: inline-block;
   width: unset;
 }
-.links-of-blogroll-inline .links-of-blogroll-item a {
+.links-of-blogroll-inline .links-of-blogroll-item a,
+.links-of-blogroll-inline .links-of-blogroll-item .exturl {
   max-width: 216px;
   box-sizing: border-box;
   display: inline-block;
@@ -2820,9 +2843,6 @@ pre .javascript .function {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
 }
 .content-wrap {
   padding: initial;
