@@ -360,6 +360,16 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
 
 
 
@@ -713,6 +723,45 @@
 
   
 
+  
+    <script id="dsq-count-scr" src="https://dandyxu.disqus.com/count.js" async></script>
+  
+
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://dandyxu.me/resume/index.html';
+        this.page.identifier = 'resume/index.html';
+        this.page.title = 'My Resume';
+      };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://dandyxu.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        $(function () {
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          if (offsetTop <= 0) {
+            // load directly when there's no a scrollbar
+            loadComments();
+          } else {
+            $(window).on('scroll.disqus_scroll', function () {
+              var scrollTop = document.documentElement.scrollTop;
+              if (scrollTop >= offsetTop) {
+                $(window).off('.disqus_scroll');
+                loadComments();
+              }
+            });
+          }
+        });
+      
+    </script>
+  
+
+
+
 
 
 	
@@ -727,10 +776,6 @@
 
 
 
-  
-
-
-
 
 
 
@@ -749,6 +794,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
 
@@ -762,6 +822,15 @@
   
 
   
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.loadBookmark();
+  
+  </script>
+
 
 </body>
 </html>
